@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+
+      <!-- it show the display of calculator -->
+
+      <input type="text" class="display" id="result" readonly />
+      <div class="buttons">
+
+        <button onclick="addvalue('7')">7</button>
+        <button onclick="addvalue('8')">8</button>
+        <button onclick="addvalue('9')">9</button>
+        <button onclick="addvalue('/')">/</button>
+
+        <button onclick="addvalue('4')">4</button>
+        <button onclick="addvalue('5')">5</button>
+        <button onclick="addvalue('6')">6</button>
+        <button onclick="addvalue('*')">*</button>
+
+        <button onclick="addvalue('1')">1</button>
+        <button onclick="addvalue('2')">2</button>
+        <button onclick="addvalue('3')">3</button>
+        <button onclick="addvalue('-')">-</button>
+
+        <button onclick="addvalue('0')">0</button>
+        <button onclick="addvalue('.')">.</button>
+        <button onclick="eraseLast()">⌫</button>
+        <button onclick="addvalue('+')">+</button>
+
+        <button class="equal" style="grid-column: span 4" onclick="calculate()">
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
